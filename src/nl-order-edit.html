@@ -762,17 +762,9 @@
                         <div class="card-body">
                           <form action="" method="post">
                               <div class="form-group row">
-                                 <label class="col-md-1 col-form-label" for="hf-email">Mã đơn</label>
-                                 <div class="col-md-2">
+                                 <label class="col-md-2 col-form-label" for="hf-email">Mã đơn khách hàng</label>
+                                 <div class="col-md-4">
                                     <input type="email" id="hf-email" name="hf-email" class="form-control">
-                                 </div>
-                                 <div class="col-md-3 col-form-label">
-                                    <div class="form-check checkbox">
-                                       <input class="form-check-input" type="checkbox" value="" id="check1">
-                                       <label class="form-check-label" for="check1">
-                                       Tự động sinh mã
-                                       </label>
-                                    </div>
                                  </div>
                                  <label class="col-md-2 col-form-label" for="hf-email">Ngày tạo</label>
                                  <div class="col-md-2">
@@ -826,7 +818,7 @@
                                     </div>
                                  </div>
                                  <div class="col-md-6">
-                                    <p class="m-t-md m-b-md"><strong class="ng-binding">Thông tin người gửi</strong></p>
+                                    <p class="m-t-md m-b-md"><strong class="ng-binding">Thông tin người nhận</strong></p>
                                     <div class="row">
                                        <div class="col-md-6">
                                           <div class="form-group">
@@ -836,7 +828,7 @@
                                        </div>
                                        <div class="col-md-6">
                                           <div class="form-group">
-                                             <label for="hf-email">Người gửi</label>
+                                             <label for="hf-email">Người nhận</label>
                                              <input type="email" id="hf-email" name="hf-email" class="form-control">
                                           </div>
                                        </div>
@@ -867,7 +859,7 @@
                                     <div class="row">
                                        <div class="col-md-6">
                                           <div class="form-group">
-                                             <label for="hf-email">Mã đơn khách hàng</label>
+                                             <label for="hf-email">Tên hàng hóa</label>
                                              <input type="email" id="hf-email" name="hf-email" class="form-control">
                                           </div>
                                        </div>
@@ -881,14 +873,26 @@
                                     <div class="row">
                                        <div class="col-md-6">
                                           <div class="form-group">
-                                             <label for="hf-email">Trọng lượng (kg) / Thể tích (cm)</label>
-                                             <input type="email" id="hf-email" name="hf-email" class="form-control">
+                                             <label for="hf-email">Trọng lượng</label>
+                                             <input type="email" id="hf-email" placeholder="kg" name="hf-email" class="form-control">
                                           </div>
                                        </div>
-                                       <div class="col-md-6">
+                                       <div class="col-md-2">
                                           <div class="form-group">
-                                             <label for="hf-email">Giá trị hàng</label>
-                                             <input type="email" id="hf-email" name="hf-email" class="form-control">
+                                             <label for="hf-email">Dài</label>
+                                             <input type="email" id="hf-email" placeholder="cm" name="hf-email" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label for="hf-email">Rộng</label>
+                                             <input type="email" id="hf-email" placeholder="cm" name="hf-email" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label for="hf-email">Cao</label>
+                                             <input type="email" id="hf-email" placeholder="cm" name="hf-email" class="form-control">
                                           </div>
                                        </div>
                                     </div>
@@ -907,17 +911,21 @@
                                        </div>
                                        <div class="col-md-6">
                                           <div class="form-group">
-                                             <label for="hf-email">Thanh toán</label>
+                                             <label for="hf-email">Bên trả phí</label>
                                              <select id="select2-4" class="form-control select2-single">
-                                                <option>Thu tiền hàng và phí vận chuyển</option>
-                                                <option>Thu tiền hàng</option>
-                                                <option>Thu phí vận chuyển</option>
-                                                <option>Không thu</option>
+                                                <option>Người gửi</option>
+                                                <option>Người nhận</option>
                                              </select>
                                           </div>
                                        </div>
                                     </div>
                                     <div class="row">
+                                      <div class="col-md-6">
+                                         <div class="form-group">
+                                            <label for="hf-email">Giá trị hàng</label>
+                                            <input type="email" id="hf-email" name="hf-email" class="form-control">
+                                         </div>
+                                      </div>
                                        <div class="col-md-6">
                                           <div class="form-group">
                                              <label for="hf-email">Tổng tiền phải thu</label>
@@ -1020,10 +1028,10 @@
                             </form>
                      </div>
                      <div class="card-footer">
+                       <button type="submit" class="btn btn-primary">
+                       <i class="fa fa-search"></i> Lưu đơn</button>
                         <button type="submit" class="btn btn-primary">
                         <i class="fa fa-search"></i> Nhập kho</button>
-                        <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-search"></i> Lưu đơn</button>
                         <button type="reset" class="btn btn-danger">
                         <i class="fa fa-undo"></i> Làm lại</button>
                      </div>

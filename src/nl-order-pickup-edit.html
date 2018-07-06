@@ -793,13 +793,28 @@
                        <div class="card-header">
                          <i class="fa fa-align-justify"></i> Danh sách đơn hàng
                          <div class="card-header-actions">
-                            <input type="email" id="hf-email" name="hf-email" class="form-control" placeholder="Quét nhận đơn hàng">
+                            <a class="btn btn-primary btn-warning" href="#">
+                            <i class="fa fa-plus-circle"></i> In đơn nhỏ
+                            </a>
+                            <a class="btn btn-primary btn-warning" href="#">
+                            <i class="fa fa-plus-circle"></i> In đơn to
+                            </a>
+                            <a class="btn btn-primary btn-warning" href="#">
+                            <i class="fa fa-plus-circle"></i> Cập nhật
+                            </a>
                          </div>
                        </div>
                        <div class="card-body">
+                         <div class="form-group row">
+                            <label class="col-md-2 col-form-label" for="text-input">Quét nhập kho</label>
+                            <div class="col-md-4">
+                               <input type="text" id="text-input" name="text-input" class="form-control">
+                            </div>
+                         </div>
                          <table class="table table-responsive-sm table-bordered">
                            <thead>
                              <tr>
+                               <th>Chọn</th>
                                <th>Mã đơn</th>
                                <th>Mã đơn khách hàng</th>
                                <th>Ngày gửi</th>
@@ -812,6 +827,11 @@
                            </thead>
                            <tbody>
                              <tr>
+                               <td>
+                                 <div class="form-check checkbox">
+                                    <input class="form-check-input" type="checkbox" value="" id="check1">
+                                 </div>
+                               </td>
                                <td>TT000000001</td>
                                <td>FA00000001</td>
                                <td>10:00 02/02/2018</td>
@@ -820,10 +840,7 @@
                                <td>1</td>
                                <td>100.000</td>
                                <td>
-         						             <a class="btn btn-info" href="#">
-                                   <i class="fa fa-edit "></i>
-                                 </a>
-                                 <a class="btn btn-danger" href="#">
+         						             <a class="btn btn-danger" href="#">
                                    <i class="fa fa-trash-o "></i>
                                  </a>
                                </td>
